@@ -1,0 +1,59 @@
+/* Import our font from Google Fonts. Nunito is a rounded, friendly
+   sans-serif — it's what gives these pages their soft, bubbly feel.
+   We load a few weights (400 = regular, 600 = semibold, 700 = bold,
+   800 = extrabold) so headings and body text can look different
+   while staying in the same font family. */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/* CSS custom properties (variables) for the color palette.
+   Keeping every color in one place means changing a single line
+   here updates it everywhere it's used across the site. */
+:root {
+  --cream: #fbf3ee;
+  --white-warm: #fffdfb;
+  --pink-soft: #f3c9d4;
+  --pink-deep: #d98ca0;
+  --mauve-text: #5b4550;
+  --grey-warm: #7a6b68;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --shadow-soft: 0 8px 24px rgba(91, 69, 80, 0.08);
+}
+
+/* A simple reset so every browser starts from the same baseline */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--cream);
+  color: var(--mauve-text);
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* A reusable "page shell". Every page wraps its <main> content in
+   this class so they all share the same max width and side padding,
+   instead of repeating those rules on every single page. */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* Respect visitors who've asked their OS to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

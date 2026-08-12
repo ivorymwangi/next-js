@@ -1,0 +1,49 @@
+.section {
+  padding-top: 64px;
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: var(--pink-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--grey-warm);
+  margin-bottom: 40px;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skillItem {
+  background-color: var(--white-warm);
+  color: var(--mauve-text);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+}

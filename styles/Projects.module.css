@@ -1,0 +1,31 @@
+.section {
+  padding-top: 64px;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: var(--pink-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--grey-warm);
+  max-width: 56ch;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
